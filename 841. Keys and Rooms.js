@@ -36,3 +36,4 @@ const canVisitAllRooms = function (rooms) {
   }
   return visited.size === rooms.length;
 };
+console.log("canVisitAllRooms",canVisitAllRooms([[1],[2],[3],[]]))
