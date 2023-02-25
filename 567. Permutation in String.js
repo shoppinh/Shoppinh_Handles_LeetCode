@@ -27,6 +27,8 @@ function checkInclusion(s1, s2) {
     // We use a sliding window to check the permutation of s1 in s2 with the size of window is s1's length
     // Increment and decrement make sure that that the count of characters in s2Map only reflects the count of characters 
     // in the current window,  and not the count of characters in the previous windows.
+
+    // Move the window to right
     s2Map[s2.charCodeAt(i + s1.length) - 97]++;
     s2Map[s2.charCodeAt(i) - 97]--;
   }

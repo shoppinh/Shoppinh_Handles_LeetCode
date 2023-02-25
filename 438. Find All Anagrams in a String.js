@@ -37,6 +37,8 @@ const findAnagrams = function (s, p) {
     // We use a sliding window to check the permutation of p in s with the size of window is p's length
     // Increment and decrement make sure that that the count of characters in sMap only reflects the count of characters 
     // in the current window,  and not the count of characters in the previous windows.
+
+    // Move the window to the right
     sMap[s.charCodeAt(i + p.length) - 97]++;
     sMap[s.charCodeAt(i) - 97]--;
   }
