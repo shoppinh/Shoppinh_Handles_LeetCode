@@ -2,7 +2,8 @@
  * @param {number[][]} img
  * @return {number[][]}
  */
-const imageSmoother = function (img) {
+// Approach 1: Brute Force
+const normalImageSmoother = function (img) {
   const result = Array.from({ length: img.length }, () =>
     Array(img[0].length).fill(0)
   );
@@ -31,3 +32,7 @@ console.log(
     [100, 200, 100],
   ])
 );
+
+// Approach 2: Optimized
+
+const imageSmoother = function (img) {};
