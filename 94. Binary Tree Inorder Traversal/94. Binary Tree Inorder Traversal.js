@@ -31,14 +31,15 @@ console.log(
   "inorderTraversal",
   inorderTraversal({
     val: 1,
-    left: null,
-    right: {
+    left: {
       val: 2,
-      left: {
-        val: 3,
-        left: null,
-        right: null,
-      },
+      left: null,
+      right: null,
+    },
+
+    right: {
+      val: 3,
+      left: null,
       right: null,
     },
   })
