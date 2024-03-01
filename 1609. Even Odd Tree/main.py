@@ -35,3 +35,4 @@ if __name__ == '__main__':
     p = TreeNode(2, TreeNode(10, TreeNode(3, TreeNode(12), TreeNode(8))), TreeNode(4, TreeNode(7, TreeNode(6)), TreeNode(9, None,TreeNode(2))))
     s = Solution()
     print(s.isEvenOddTree(p))
+    
