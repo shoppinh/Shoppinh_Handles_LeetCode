@@ -19,5 +19,7 @@
     "titleBar.inactiveForeground": "#15202b99",
     "commandCenter.border": "#15202b99"
   },
-  "peacock.color": "#b0b6e7"
+  "peacock.color": "#b0b6e7",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
 }
