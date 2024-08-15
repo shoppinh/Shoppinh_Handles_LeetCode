@@ -36,7 +36,7 @@ class PriorityQueueHeap:
         heapq.heappush(self.nums, val)
     
 class Solution:
-    def smallestDistancePair(self, nums: List[int], k: int) -> int:
+    def smallestDistancePair2(self, nums: List[int], k: int) -> int:
         q = PriorityQueueHeap(k, [])
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
@@ -50,13 +50,15 @@ class Solution:
         
         while minDistance < maxDistance:
             midDistance = (minDistance + maxDistance) // 2
+            # If the pair count is less than k => it means that the kth pair has to be on the right side of mid distance
             if self.countPairsWithinDistance(numbers, midDistance) < k:
                 minDistance = midDistance + 1
+            # If the pair count is more than k => it means that the kth pair has to be on the left side of mid distance
             else:
                 maxDistance = midDistance
         
         return minDistance
-
+    # Using slide window technique to calculate number of pairs 
     def countPairsWithinDistance(self, numbers: List[int], targetDistance: int) -> int:
         count = left = 0
         for right in range(1, len(numbers)):
@@ -66,4 +68,4 @@ class Solution:
         return count
 if __name__ == "__main__":
     s = Solution()
-    print(s.smallestDistancePair([1,3,1],1))
+    print(s.smallestDistancePair([1,3,4,5,6,2,1,3,4,56,7],3))
