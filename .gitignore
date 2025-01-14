@@ -37,3 +37,63 @@ lerna-debug.log*
 
 #env
 .env
+
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+
+# Rider files
+.idea/
+
+# Visual Studio Code files
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# User-specific files
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pdb
+*.mdb
+*.cache
+*.ilk
+*.idb
+*.ipch/
+*.aps
+*.pch
+*.pdb
+*.obj
+*.exe
+*.dll
+*.appx
+*.appxbundle
+*.appxupload
+*.appxmanifest
+
+# Other files
+*.vsix
+*.vssscc
+*.vsscc
+*.scc

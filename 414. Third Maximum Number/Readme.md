@@ -7,11 +7,11 @@
 - Sorting
 
 ## Problem Statement
-Given an integer array `nums`, return the third distinct maximum number in this array. If the third maximum does not exist, return the maximum number.
+Given an integer array `nums`, return the **third distinct maximum number** in this array. If the third maximum does not exist, return the maximum number.
 
-### Examples
+## Examples
 
-**Example 1:**
+### Example 1:
 
 * Input: nums = [3,2,1]
 * Output: 1
