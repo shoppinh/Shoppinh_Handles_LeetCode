@@ -22,5 +22,6 @@
   "peacock.color": "#cc06f5",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "FSharp.suggestGitignore": false
+  "FSharp.suggestGitignore": false,
+  "dotnet.defaultSolution": "ConsoleApp1.sln"
 }
