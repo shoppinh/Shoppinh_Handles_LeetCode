@@ -9,14 +9,13 @@
 
             // Using HashSet
             //var set1 = new HashSet<int>(nums1);
-            //var set2 = new HashSet<int>(nums2);
             //var result = new List<int>();
-            //foreach (var item in set2)
+
+            //foreach (var item in nums2)
             //{
-            //    if (set1.Contains(item))
-            //    {
-            //        result.Add(item);
-            //    }
+            //    if (!set1.Contains(item)) continue;
+            //    result.Add(item);
+            //    set1.Remove(item);
             //}
             //return result.ToArray();
 
@@ -30,15 +29,11 @@
 
             foreach (var item in nums2)
             {
-                if (map.ContainsKey(item))
-                {
-                    result.Add(item);
-                    map.Remove(item);
-                }
+                if (!map.ContainsKey(item)) continue;
+                result.Add(item);
+                map.Remove(item);
             }
             return result.ToArray();
-
-
 
         }
 
