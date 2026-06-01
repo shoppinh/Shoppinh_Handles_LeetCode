@@ -13,4 +13,6 @@ const twoSum = (nums, target) => {
 	}
 }
 
-console.log("Result: ",twoSum([1,2,3,7], 10))
+console.log("Result: ",twoSum([3,3],6))
+
+
