@@ -1,11 +1,13 @@
 # Definition for singly-linked list.
+from typing import Optional
+
 class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+    def __init__(self, x: int) -> None:
+        self.val: int = x
+        self.next: Optional['ListNode'] = None
 
 class Solution(object):
-    def hasCycle(self, head):
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
         """
         :type head: ListNode
         :rtype: bool
@@ -18,6 +20,8 @@ class Solution(object):
         while slow != fast:
             if not fast or not fast.next:
                 return False
+            assert slow is not None
+            assert fast is not None
             slow = slow.next
             fast = fast.next.next
         return True
