@@ -12,6 +12,14 @@ Return the maximum amount of water a container can store.
 
 ### Example 1
 
+```mermaid
+xychart-beta
+    title "Container With Most Water - Example 1"
+    x-axis ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
+    y-axis "Height" 0 --> 10
+    bar [1, 8, 6, 2, 5, 4, 8, 3, 7]
+```
+
 ```
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
