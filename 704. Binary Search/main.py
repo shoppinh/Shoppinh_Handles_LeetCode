@@ -7,8 +7,8 @@ class Solution:
         left = 0
         right = len(nums)-1
 
-        while (left < right):
-            middle = left + ((right - left) // 2) 
+        while (left <= right):
+            middle = left + ((right - left) // 2)
             if target < nums[middle]:
                 right = middle -1
             elif target > nums[middle]:
@@ -18,7 +18,7 @@ class Solution:
 
 
         return -1
-        
+
 
 if __name__ == "__main__":
     s = Solution()
