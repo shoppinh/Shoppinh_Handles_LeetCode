@@ -5,11 +5,11 @@ class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         answers = len(temperatures) * [0]
         stack:List[int] = []
-        for i in range(0, len(temperatures)):
+        for i in range(len(temperatures)):
             while len(stack) >0:
                 if temperatures[i] > temperatures[stack[-1]]:
-                    answers[stack[-1]] = i - stack[-1]
-                    stack.pop()
+                    top = stack.pop()
+                    answers[top] = i - top
                 else:
                     break
             stack.append(i)
