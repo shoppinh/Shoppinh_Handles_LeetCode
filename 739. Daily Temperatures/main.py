@@ -1,6 +1,5 @@
 from typing import List
 
-
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         answers = len(temperatures) * [0]
@@ -23,4 +22,3 @@ if __name__ == "__main__":
     print("🚀 ----------------------------------------------------------------------------------------------🚀")
     print("🚀 ~ main.py:23 ~ s.dailyTemperatures([73,74,75,71,69,76]):", s.dailyTemperatures([73,74,75,71,69,76]))
     print("🚀 ----------------------------------------------------------------------------------------------🚀")
-
