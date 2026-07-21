@@ -8,8 +8,7 @@ class Solution:
         for i in range(len(nums)):
             if i>0 and nums[i] == nums[i-1]:
                 continue
-            # The left pointer should start after i, not at i.
-            left = i
+            left = i + 1
             right = len(nums)-1
 
             while left < right:
